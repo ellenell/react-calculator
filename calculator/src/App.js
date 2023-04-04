@@ -1,5 +1,6 @@
 import { useReducer } from 'react'
 import DigitButton from './components/DigitButton.js'
+import OperationButton from './components/OperationButton.js'
 import './App.css';
 
 const actions = {
@@ -33,19 +34,19 @@ function App() {
 
       <button className="span-two">AC</button>
       <button>DEL</button>
-      <button>/</button>
+      < OperationButton operation = "/" dispatch = {dispatch} />
       < DigitButton digits = "1" dispatch={dispatch} />
       < DigitButton digits = "2" dispatch={dispatch} />
       < DigitButton digits = "3" dispatch={dispatch} />
-      <button>*</button>
+      < OperationButton operation = "*" dispatch = {dispatch} />
       < DigitButton digits = "4" dispatch={dispatch} />
       < DigitButton digits = "5" dispatch={dispatch} />
       < DigitButton digits = "6" dispatch={dispatch} />
-      <button>+</button>
+      < OperationButton operation = "+" dispatch = {dispatch} />
       < DigitButton digits = "7" dispatch={dispatch} />
       < DigitButton digits = "8" dispatch={dispatch} />
       < DigitButton digits = "9" dispatch={dispatch} />
-      <button>-</button>
+      < OperationButton operation = "-" dispatch = {dispatch} />
       < DigitButton digits = "0" dispatch={dispatch} />
       < DigitButton digits = "." dispatch={dispatch} />
       <button className="span-two">=</button>
